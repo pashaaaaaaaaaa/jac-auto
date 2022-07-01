@@ -107,6 +107,7 @@ header{
     justify-content: end;
     margin-bottom: 30px;
 }
+
 .header__phone span{
     border: 1px solid red;
     width: 66px;
@@ -134,6 +135,10 @@ header{
     border: none;
     border-radius: 50%;
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25), inset 0px 4px 18px rgba(255, 255, 255, 0.25);
+}
+.header__call:hover {
+    cursor: pointer;
+    animation: 1200ms ease 0s normal none 1 running shake;
 }
 .icon-phone{
     width: 27px;
@@ -448,6 +453,14 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.btn1:hover {
+    cursor: pointer;
+    animation: 1200ms ease 0s normal none 1 running shake;
+}
+.btn2:hover {
+    cursor: pointer;
+    animation: 1200ms ease 0s normal none 1 running shake;
 }
 .car-elps{
     display: flex;
@@ -794,6 +807,14 @@ header{
     line-height: 25px;
     text-transform: uppercase;
     border: 1.02405px solid #FF151F;
+}
+.jac-btn1:hover {
+    cursor: pointer;
+    animation: 1200ms ease 0s normal none 1 running shake;
+}
+.jac-btn2:hover {
+    cursor: pointer;
+    animation: 1200ms ease 0s normal none 1 running shake;
 }
 .cont__five{
     width: 100%;
@@ -3080,7 +3101,7 @@ footer .header__phone{
         display: flex;
         align-items: center;
         position: relative;
-        padding-top: 82px;
+        padding-top: 40px;
         margin-bottom: 40px;
     }
     .cont__one-text{
@@ -3096,7 +3117,7 @@ footer .header__phone{
         line-height: 62px;
         text-transform: uppercase;
         color: #000000;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
         z-index: 50;
     }
     .cont__block{
@@ -3104,13 +3125,11 @@ footer .header__phone{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 22px;
-        padding-left: 41px;
-        padding-bottom: 51px;
+        padding: 20px;
         box-sizing: border-box;
         margin-bottom: 29px;
         width: 685px;
-        height: 241px;
+        height: 180px;
         background: #FFFFFF;
         border-left: 2px solid #FF151F;
         box-shadow: 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802)
@@ -3131,7 +3150,7 @@ footer .header__phone{
     }
     .cont__one-car{
         background-image: url(img/jac.jpg);
-        background-position: center;
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 1200px;
@@ -3463,6 +3482,11 @@ footer .header__phone{
     .select2-container--default .select2-selection--single .select2-selection__arrow b {
         border-color: #FF151F transparent transparent transparent;
     }
+    .select2-container--open .select2-dropdown--below{
+        background: #FFFFFF;
+        border-bottom: 0.691358px solid #FF151F;
+        box-shadow: 0px 100px 95px rgba(0, 0, 0, 0.15), 0px 42.2744px 39.6887px rgba(0, 0, 0, 0.0988692), 0px 22.3267px 21.2195px rgba(0, 0, 0, 0.0693378), 0px 12.1817px 11.8955px rgba(0, 0, 0, 0.0454621), 0px 6.23544px 6.3176px rgba(0, 0, 0, 0.0251173), 0px 2.48235px 2.62889px rgba(0, 0, 0, 0.00801152);
+    }
     .jac{
         width: auto;
         display: flex;
@@ -3756,3 +3780,49 @@ footer .header__phone{
         z-index: 0;
     }
 }
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    10% {
+        transform: rotateZ(-30deg);
+    }
+
+    20% {
+        transform: rotateZ(15deg);
+    }
+
+    30% {
+        transform: rotateZ(-10deg);
+    }
+
+    40% {
+        transform: rotateZ(7.5deg);
+    }
+
+    50% {
+        transform: rotateZ(-6deg);
+    }
+
+    60% {
+        transform: rotateZ(5deg);
+    }
+
+    70% {
+        transform: rotateZ(-4.28571deg);
+    }
+
+    80% {
+        transform: rotateZ(3.75deg);
+    }
+
+    90% {
+        transform: rotateZ(-3.33333deg);
+    }
+
+    100% {
+
+        transform: rotateZ(0deg);
+    }
+}    
